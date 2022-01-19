@@ -27,13 +27,7 @@
             "text": {
                 "type": "string",
                 "allowedTags": "i,b,a[href],code[class],mark[class]"
-            },
-            "alignment": [
-                "left",
-                "center",
-                "right"
-            ]
-        },
+            }        },
         "list": {
             "style": [
                 "ordered",
@@ -75,11 +69,7 @@
             "caption": {
                 "type": "string",
                 "allowedTags": "i,b,a[href],code[class],mark[class]"
-            },
-            "alignment": [
-                "left",
-                "center"
-            ]
+            }
         },
         "delimiter": {
         },

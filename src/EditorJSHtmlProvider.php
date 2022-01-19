@@ -1,6 +1,6 @@
 <?php
 
-namespace Ankitech\LaravelEditorjsHtml;
+namespace SaperX\LaravelEditorjsHtml;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,4 +1,8 @@
 @php
+    if (empty($block->alignment)) {
+        $block->alignment = 'left';
+    }
+
     if ($block->alignment == 'center') {
         $centerClass = 'text-center';
     } elseif($block->alignment == 'left') {

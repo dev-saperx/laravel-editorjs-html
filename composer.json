@@ -1,6 +1,13 @@
 {
-    "name": "ankitech/laravel-editorjs-html",
-    "type": "metapackage",
+    "name": "saperx/laravel-editorjs-html",
+    "keywords": [
+        "laravel",
+        "editorjs",
+        "convert",
+        "html"
+    ],
+    "description": "Convert object editorjs to html view",
+    "type": "library",
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
@@ -11,17 +18,27 @@
         {
             "name": "Muntadher",
             "email": "dev@ankitech.co"
+        },
+        {
+            "name": "Willian de Souza",
+            "email": "willian.souza@saperx.com.br"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ankitech\\LaravelEditorjsHtml\\": "src/"
+            "SaperX\\LaravelEditorjsHtml\\": "src/"
         }
     },
-    "extra": { 
-        "branch-alias": {
-            "dev-master": "1.0-dev"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SaperX\\LaravelEditorjsHtml\\EditorJSHtmlProvider"
+            ],
+            "aliases": {
+                "EditorJSHtml": "SaperX\\LaravelEditorjsHtml\\Facades\\EditorJSHtml"
+            }
         }
     }
 }
